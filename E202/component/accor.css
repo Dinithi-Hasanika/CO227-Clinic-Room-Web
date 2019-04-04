@@ -1,0 +1,22 @@
+width: 350px;
+margin-right: 450px;
+margin-left: 300px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+background-color: white;
+background-image: url("freestock_571078105.jpg");
+background-position: 10px 10px;
+background-repeat: no-repeat;
+padding: 12px 30px 12px 55px;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+box-align: center;
+
+margin: 50;
+padding: 50;
+background: url(pexels-photo-1595822.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+background-color: transparent;

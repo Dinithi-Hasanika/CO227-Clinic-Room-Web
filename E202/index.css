@@ -1,0 +1,17 @@
+body {
+  /*background: url("C:\Users\user\clinic-home\src\doctor_PNG16006.png");*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: aquamarine;
+}
+
+.DottedBox {
+  margin: 40px;
+  border: 5px dotted pink;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
