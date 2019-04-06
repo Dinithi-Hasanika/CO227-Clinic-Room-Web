@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
+import "./member.css";
+import "./home.css";
 
 class MemberPage extends Component {
   state = {};
@@ -68,22 +70,37 @@ class MemberPage extends Component {
                             data-parent="#accordionExample"
                           >
                             <ul class="list-group">
-                              <li class="list-group-item">
+                              <a href="" class="list-group-item">
                                 Webinar of Chapter 1
-                              </li>
-                              <li class="list-group-item">
+                              </a>
+
+                              <a href="" class="list-group-item">
                                 Slide show of webinar 1
-                              </li>
-                              <li class="list-group-item">Time management </li>
-                              <li class="list-group-item">
+                              </a>
+
+                              <a href="" class="list-group-item">
+                                Time management
+                              </a>
+
+                              <a href="" class="list-group-item">
                                 KFP answering techniques
-                              </li>
-                              <li class="list-group-item">
+                              </a>
+
+                              <a href="" class="list-group-item">
                                 Scoring technique for the 26 questions
-                              </li>
-                              <li class="list-group-item">Areas to Study </li>
-                              <li class="list-group-item">Study Plan </li>
-                              <li class="list-group-item">50 KFP questions </li>
+                              </a>
+
+                              <a href="" class="list-group-item">
+                                Areas to Study
+                              </a>
+
+                              <a href="" class="list-group-item">
+                                Study Plan
+                              </a>
+
+                              <a href="" class="list-group-item">
+                                50 KFP questions
+                              </a>
                             </ul>
                           </div>
                         </div>
@@ -110,9 +127,42 @@ class MemberPage extends Component {
                             data-parent="#accordionExample"
                           >
                             <ul class="list-group">
-                              <li class="list-group-item">One</li>
-                              <li class="list-group-item">Two</li>
-                              <li class="list-group-item">Three</li>
+                              <a href="" class="list-group-item">
+                                Webinar of Chapter 2
+                              </a>
+                              <a href="" class="list-group-item">
+                                Slide show of webinar 2
+                              </a>
+                              <a href="" class="list-group-item">
+                                Dermatology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Respiratory
+                              </a>
+                              <a href="" class="list-group-item">
+                                Ear, Nose and Throat
+                              </a>
+                              <a href="" class="list-group-item">
+                                Eye notes
+                              </a>
+                              <a href="" class="list-group-item">
+                                Endocrinology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Rheumatology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Sexually transmitted diseases
+                              </a>
+                              <a href="" class="list-group-item">
+                                Aboriginal and Torres Strait Islander Health-
+                              </a>
+                              <a href="" class="list-group-item">
+                                Red book Notes
+                              </a>
+                              <a href="" class="list-group-item">
+                                KFP questions from chapter 2
+                              </a>
                             </ul>
                           </div>
                         </div>
@@ -139,13 +189,54 @@ class MemberPage extends Component {
                             data-parent="#accordionExample"
                           >
                             <ul class="list-group">
-                              <li class="list-group-item">
-                                Webinar of Chapter 2{" "}
-                              </li>
-                              <li class="list-group-item">
-                                Slide show of webinar 2
-                              </li>
-                              <li class="list-group-item">Dermatology</li>
+                              <a href="" class="list-group-item">
+                                Webinar of Chapter 3
+                              </a>
+                              <a href="" class="list-group-item">
+                                Slide show of webinar 3
+                              </a>
+                              <a href="" class="list-group-item">
+                                Cardiovascular Disease
+                              </a>
+                              <a href="" class="list-group-item">
+                                Nephrology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Urology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Musculoskeletal
+                              </a>
+                              <a href="" class="list-group-item">
+                                Palliative care and Pain
+                              </a>
+                              <a href="" class="list-group-item">
+                                Gastroenterology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Hepatology - Pancreas
+                              </a>
+                              <a href="" class="list-group-item">
+                                Mens Health
+                              </a>
+                              <a href="" class="list-group-item">
+                                Infertility
+                              </a>
+                              <a href="" class="list-group-item">
+                                Travel medicine
+                              </a>
+                              <a href="" class="list-group-item">
+                                Haematology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Malignancies
+                              </a>
+                              <a href="" class="list-group-item">
+                                KFP questions from chapter 3
+                              </a>
+                              <a href="" class="list-group-item">
+                                Webinar on chapter 3
+                              </a>
                             </ul>
                           </div>
                         </div>
@@ -172,9 +263,60 @@ class MemberPage extends Component {
                             data-parent="#accordionExample"
                           >
                             <ul class="list-group">
-                              <li class="list-group-item">One</li>
-                              <li class="list-group-item">Two</li>
-                              <li class="list-group-item">Three</li>
+                              <a href="" class="list-group-item">
+                                Webinar of Chapter 4
+                              </a>
+                              <a href="" class="list-group-item">
+                                Slide show of webinar 4
+                              </a>
+                              <a href="" class="list-group-item">
+                                Psychiatry
+                              </a>
+                              <a href="" class="list-group-item">
+                                Obstetric
+                              </a>
+                              <a href="" class="list-group-item">
+                                Gynaecology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Paediatrics
+                              </a>
+                              <a href="" class="list-group-item">
+                                Neurology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Emergency medicine
+                              </a>
+                              <a href="" class="list-group-item">
+                                Nutrition
+                              </a>
+                              <a href="" class="list-group-item">
+                                Infections Disease
+                              </a>
+                              <a href="" class="list-group-item">
+                                Vaccination
+                              </a>
+                              <a href="" class="list-group-item">
+                                Breast Disease
+                              </a>
+                              <a href="" class="list-group-item">
+                                Surgery
+                              </a>
+                              <a href="" class="list-group-item">
+                                Pharmacology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Radiology
+                              </a>
+                              <a href="" class="list-group-item">
+                                Genetics
+                              </a>
+                              <a href="" class="list-group-item">
+                                Miscellaneous and Preventive Health
+                              </a>
+                              <a href="" class="list-group-item">
+                                KFP questions from chapter 4
+                              </a>
                             </ul>
                           </div>
                         </div>
@@ -185,102 +327,55 @@ class MemberPage extends Component {
               </div>
             </div>
           </Col>
-        </Row>
 
-        {/*  <div class="container">
-    <div class="row profile">
-		<div class="col-md-3">
-			<div class="profile-sidebar">
-				
-				<div class="profile-userpic">
-					<img src="https://gravatar.com/avatar/31b64e4876d603ce78e04102c67d6144?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png" class="img-responsive" alt="">
-				</div>
-				
-				<div class="profile-usertitle">
-					<div class="profile-usertitle-name">
-						Jason Davis
-					</div>
-					<div class="profile-usertitle-job">
-						Developer
-					</div>
-				</div>
-				
-				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-sm">Follow</button>
-					<button type="button" class="btn btn-danger btn-sm">Message</button>
-				</div>
-				
-				<div class="profile-usermenu">
-					<ul class="nav">
-						<li class="active">
-							<a href="#">
-							<i class="glyphicon glyphicon-home"></i>
-							Overview </a>
-						</li>
-						<li>
-							<a href="https://codepen.io/jasondavis/pen/jVRwaG?editors=1000">
-							<i class="glyphicon glyphicon-user"></i>
-							Account Settings </a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-							<i class="glyphicon glyphicon-ok"></i>
-							Tasks </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-flag"></i>
-							Help </a>
-						</li>
-					</ul>
-				</div>
-				
-			   
-           <div class="portlet light bordered">
-                                                
-                                                <div class="row list-separated profile-stat">
-                                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                                        <div class="uppercase profile-stat-title"> 37 </div>
-                                                        <div class="uppercase profile-stat-text"> Projects </div>
-                                                    </div>
-                                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                                        <div class="uppercase profile-stat-title"> 51 </div>
-                                                        <div class="uppercase profile-stat-text"> Tasks </div>
-                                                    </div>
-                                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                                        <div class="uppercase profile-stat-title"> 61 </div>
-                                                        <div class="uppercase profile-stat-text"> Uploads </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                 <div>
-                                                    <h4 class="profile-desc-title">About Jason Davis</h4>
-                                                    <span class="profile-desc-text"> Lorem ipsum dolor sit amet diam nonummy nibh dolore. </span>
-                                                    <div class="margin-top-20 profile-desc-link">
-                                                        <i class="fa fa-globe"></i>
-                                                        <a href="https://www.apollowebstudio.com">apollowebstudio.com</a>
-                                                    </div>
-                                                    <div class="margin-top-20 profile-desc-link">
-                                                        <i class="fa fa-twitter"></i>
-                                                        <a href="https://www.twitter.com/jasondavisfl/">@jasondavisfl</a>
-                                                    </div>
-                                                    <div class="margin-top-20 profile-desc-link">
-                                                        <i class="fa fa-facebook"></i>
-                                                        <a href="https://www.facebook.com/">JasonDavisFL</a>
- </div></div></div>                   
-                                           
-        
-        
-			</div>
-		</div>
-		<div class="col-md-9">
-            <div class="profile-content">
-			   Some user related content goes here...
+          <Col>
+            <div class="row profile">
+              <div class="profile-sidebar">
+                <div class="profile-userpic">
+                  <img
+                    src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+
+                <div class="profile-usertitle">
+                  <div class="profile-usertitle-name">Marcus Doe</div>
+                  <div class="profile-usertitle-job">Developer</div>
+                </div>
+
+                <div class="profile-userbuttons">
+                  <ul class="list-group">
+                    <a
+                      href=""
+                      class="li-items list-group-item border-0 li-text"
+                    >
+                      <i class="fas fa-star" />
+                      {"          "} Starred
+                    </a>
+
+                    <a href="" class="list-group-item border-0 li-text">
+                      <i class="fas fa-book" /> All notes
+                    </a>
+                    <a href="" class="list-group-item border-0 li-text">
+                      <i class="fas fa-bookmark" />
+                      {"          "} Bookmarks
+                    </a>
+                    <a href="" class="list-group-item border-0 li-text">
+                      <i class="fas fa-tags" /> Tags
+                    </a>
+                    <a href="" class="list-group-item border-0 li-text">
+                      <i class="fas fa-user-friends" /> Shared
+                    </a>
+                    <a href="" class="list-group-item border-0 li-text">
+                      <i class="fas fa-trash" /> Trash
+                    </a>
+                  </ul>
+                </div>
+              </div>
             </div>
-		</div>
-	</div>
-    </div>
-      </div>*/}
+          </Col>
+        </Row>
       </div>
     );
   }
