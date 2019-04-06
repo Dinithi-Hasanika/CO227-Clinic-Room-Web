@@ -16,11 +16,8 @@ class HomePage extends Component {
                 <a class="navbar-brand" href="#">
                   About
                 </a>
-                <a class="navbar-brand" href="#">
-                  Register
-                </a>
                 <a class="navbar-brand" href="user">
-                  Log In
+                  Sign Up/Sign In
                 </a>
               </nav>
             </Col>
