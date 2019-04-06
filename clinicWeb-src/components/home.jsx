@@ -16,7 +16,7 @@ class HomePage extends Component {
                 <a class="navbar-brand" href="#">
                   About
                 </a>
-                <a class="navbar-brand" href="user">
+                <a class="navbar-brand" href="logs">
                   Sign Up/Sign In
                 </a>
               </nav>
