@@ -2,8 +2,6 @@ import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
 
-import Select from "react-select";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import fire from "./config/fire";
@@ -27,8 +25,6 @@ class SignUpForm extends Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.handleSubmit = this.handleSubmit.bind(this);
-
-    this.handleSelect = this.handleSelect.bind(this);
   }
   membershipType = [
     { label: "Member Type-1", value: 1, name: "memtype" },
@@ -65,11 +61,7 @@ class SignUpForm extends Component {
         console.log(error);
       });
   }
-  handleSelect(e) {
-    this.setState({
-      [e.name]: e.value
-    });
-  }
+
   render() {
     return (
       <div className="FormCenter">
@@ -119,14 +111,6 @@ class SignUpForm extends Component {
               name="email"
               value={this.state.email}
               onChange={this.handleChange}
-            />
-          </div>
-          <div className="select_field">
-            <Select
-              options={this.membershipType}
-              placeholder="Select MemberShip Type"
-              name="memtype"
-              onChange={this.handleSelect}
             />
           </div>
 
