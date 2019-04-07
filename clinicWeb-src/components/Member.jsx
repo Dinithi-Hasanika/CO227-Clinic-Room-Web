@@ -1,17 +1,20 @@
 import React, { Component } from "react";
-
 import { Container, Row, Col } from "reactstrap";
-
 import "./member.css";
-
 import "./home.css";
+import fire from "../config/fire";
 
 class MemberPage extends Component {
-  state = {};
-
+  constructor(props) {
+    super(props);
+  }
+  login() {
+    fire.auth().signOut();
+  }
   render() {
     return (
       <div>
+        <button onClick={this.login}>Log Out</button>
         <div className="but-body">
           <Row>
             <Col>
@@ -108,7 +111,6 @@ class MemberPage extends Component {
                             </ul>
                           </div>
                         </div>
-
                         <div class="card">
                           <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
@@ -125,7 +127,6 @@ class MemberPage extends Component {
                               </button>
                             </h5>
                           </div>
-
                           <div
                             id="collapseTwo"
                             class="panel-collapse collapse fade"
@@ -136,54 +137,42 @@ class MemberPage extends Component {
                               <a href="" class="list-group-item">
                                 Webinar of Chapter 2
                               </a>
-
                               <a href="" class="list-group-item">
                                 Slide show of webinar 2
                               </a>
-
                               <a href="" class="list-group-item">
                                 Dermatology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Respiratory
                               </a>
-
                               <a href="" class="list-group-item">
                                 Ear, Nose and Throat
                               </a>
-
                               <a href="" class="list-group-item">
                                 Eye notes
                               </a>
-
                               <a href="" class="list-group-item">
                                 Endocrinology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Rheumatology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Sexually transmitted diseases
                               </a>
-
                               <a href="" class="list-group-item">
                                 Aboriginal and Torres Strait Islander Health-
                               </a>
-
                               <a href="" class="list-group-item">
                                 Red book Notes
                               </a>
-
                               <a href="" class="list-group-item">
                                 KFP questions from chapter 2
                               </a>
                             </ul>
                           </div>
                         </div>
-
                         <div class="card">
                           <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
@@ -200,7 +189,6 @@ class MemberPage extends Component {
                               </button>
                             </h5>
                           </div>
-
                           <div
                             id="collapseThree"
                             class="panel-collapse collapse fade"
@@ -211,70 +199,54 @@ class MemberPage extends Component {
                               <a href="" class="list-group-item">
                                 Webinar of Chapter 3
                               </a>
-
                               <a href="" class="list-group-item">
                                 Slide show of webinar 3
                               </a>
-
                               <a href="" class="list-group-item">
                                 Cardiovascular Disease
                               </a>
-
                               <a href="" class="list-group-item">
                                 Nephrology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Urology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Musculoskeletal
                               </a>
-
                               <a href="" class="list-group-item">
                                 Palliative care and Pain
                               </a>
-
                               <a href="" class="list-group-item">
                                 Gastroenterology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Hepatology - Pancreas
                               </a>
-
                               <a href="" class="list-group-item">
                                 Mens Health
                               </a>
-
                               <a href="" class="list-group-item">
                                 Infertility
                               </a>
-
                               <a href="" class="list-group-item">
                                 Travel medicine
                               </a>
-
                               <a href="" class="list-group-item">
                                 Haematology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Malignancies
                               </a>
-
                               <a href="" class="list-group-item">
                                 KFP questions from chapter 3
                               </a>
-
                               <a href="" class="list-group-item">
                                 Webinar on chapter 3
                               </a>
                             </ul>
                           </div>
                         </div>
-
                         <div class="card">
                           <div class="card-header" id="headingFour">
                             <h5 class="mb-0">
@@ -291,7 +263,6 @@ class MemberPage extends Component {
                               </button>
                             </h5>
                           </div>
-
                           <div
                             id="collapseFour"
                             class="panel-collapse collapse fade"
@@ -302,71 +273,54 @@ class MemberPage extends Component {
                               <a href="" class="list-group-item">
                                 Webinar of Chapter 4
                               </a>
-
                               <a href="" class="list-group-item">
                                 Slide show of webinar 4
                               </a>
-
                               <a href="" class="list-group-item">
                                 Psychiatry
                               </a>
-
                               <a href="" class="list-group-item">
                                 Obstetric
                               </a>
-
                               <a href="" class="list-group-item">
                                 Gynaecology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Paediatrics
                               </a>
-
                               <a href="" class="list-group-item">
                                 Neurology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Emergency medicine
                               </a>
-
                               <a href="" class="list-group-item">
                                 Nutrition
                               </a>
-
                               <a href="" class="list-group-item">
                                 Infections Disease
                               </a>
-
                               <a href="" class="list-group-item">
                                 Vaccination
                               </a>
-
                               <a href="" class="list-group-item">
                                 Breast Disease
                               </a>
-
                               <a href="" class="list-group-item">
                                 Surgery
                               </a>
-
                               <a href="" class="list-group-item">
                                 Pharmacology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Radiology
                               </a>
-
                               <a href="" class="list-group-item">
                                 Genetics
                               </a>
-
                               <a href="" class="list-group-item">
                                 Miscellaneous and Preventive Health
                               </a>
-
                               <a href="" class="list-group-item">
                                 KFP questions from chapter 4
                               </a>
@@ -392,34 +346,35 @@ class MemberPage extends Component {
                   />
                 </div>
 
+                <div class="profile-usertitle">
+                  <div class="profile-usertitle-name">Marcus Doe</div>
+                  <div class="profile-usertitle-job">Developer</div>
+                </div>
+
                 <div class="profile-userbuttons">
                   <ul class="list-group">
                     <a
                       href=""
-                      class="li-items list-group-item border-0 li-text visited"
+                      class="li-items list-group-item border-0 li-text"
                     >
                       <i class="fas fa-star" />
                       {"          "} Starred
                     </a>
 
-                    <a href="" class="list-group-item border-0 li-text visited">
+                    <a href="" class="list-group-item border-0 li-text">
                       <i class="fas fa-book" /> All notes
                     </a>
-
-                    <a href="" class="list-group-item border-0 li-text visited">
+                    <a href="" class="list-group-item border-0 li-text">
                       <i class="fas fa-bookmark" />
                       {"          "} Bookmarks
                     </a>
-
-                    <a href="" class="list-group-item border-0 li-text visited">
+                    <a href="" class="list-group-item border-0 li-text">
                       <i class="fas fa-tags" /> Tags
                     </a>
-
-                    <a href="" class="list-group-item border-0 li-text visited">
+                    <a href="" class="list-group-item border-0 li-text">
                       <i class="fas fa-user-friends" /> Shared
                     </a>
-
-                    <a href="" class="list-group-item border-0 li-text visited">
+                    <a href="" class="list-group-item border-0 li-text">
                       <i class="fas fa-trash" /> Trash
                     </a>
                   </ul>
