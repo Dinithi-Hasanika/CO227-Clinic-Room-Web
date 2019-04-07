@@ -5,10 +5,11 @@ import React, { Component } from "react";
 //import SignUpForm from "./pages/SignUpForm";
 
 import LoginPath from "./LoginPath";
-import Home from "./Home";
+
 import "./Login.css";
 import fire from "./config/fire";
 import Admin from "./pages/Admin";
+import MemberPage from "./components/Member";
 
 class Logs extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class Logs extends Component {
     fire.auth().onAuthStateChanged(user => {
       if (user) {
         this.setState({ user });
-        if (this.state.user.email === "dinithiliyanage.95@gmail.com") {
+        if (this.state.user.email === "dulapreethi@gmail.com") {
           this.setState({ isAdmin: true });
         }
       } else {
@@ -41,7 +42,9 @@ class Logs extends Component {
       );
     } else {
       return (
-        <div className="App">{this.state.user ? <Home /> : <LoginPath />}</div>
+        <div className="App">
+          {this.state.user ? <MemberPage /> : <LoginPath />}
+        </div>
       );
     }
   }
