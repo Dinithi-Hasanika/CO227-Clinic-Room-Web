@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: lightseagreen;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+
+  font-size: calc(10v);
+  color: rgb(218, 32, 32);
+}
+
+.App-header2 {
+  background-color: #2f3640;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header3 {
+  background-color: #2f3640;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+
+.col-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 25vw;
+  min-height: 90vh;
+  background-color: #FAD2E0;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 75vw;
+  min-height: 90vh;
+  background-color: #37ccd6;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 30vw;
+  min-height: 80vh;
+  background-color: #d63737;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 40vw;
+  min-height: 80vh;
+  background-color: #f051ad;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.col-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 90vw;
+  min-height: 20vh;
+  background-color: white;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.col-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 10vw;
+  min-height: 20vh;
+  background-color: white;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 75vw;
+  min-height: 20vh;
+  background-color: #2f3640;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+.row-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 75vw;
+  min-height: 15vh;
+  background-color: #2f3640;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+.row-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 75vw;
+  min-height: 55vh;
+  background-color: #2f3640;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+.row-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 90vw;
+  min-height: 10vh;
+  background-color: #4693e8;
+  font-size: calc(5px + 2vmin);
+  color: rgb(243, 4, 135);
+}
+.row-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 10vw;
+  min-height: 10vh;
+  background-color: #4693e8;
+  font-size: calc(5px + 2vmin);
+  color: rgb(243, 4, 135);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
