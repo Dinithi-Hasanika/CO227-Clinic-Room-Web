@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from '../pages/Firebase';  //new
 import { Link } from 'react-router-dom'; //new
+import Show from '../pages/Show';
 
 export default class SignUp extends Component {
  
@@ -27,6 +28,9 @@ export default class SignUp extends Component {
     this.setState({
       mydb1
    });
+   console.log("Hello ");
+   console.log(mydb1.length);
+   console.log(mydb1[0].username);
   }
 
   componentDidMount() {
@@ -34,11 +38,13 @@ export default class SignUp extends Component {
   }
 
   delete(id){
-    firebase.firestore().collection('user').doc(id).delete().then(() => {
+    firebase.firestore().collection('mydb1').doc(id).delete().then(() => {
       console.log("Document successfully deleted!");
       this.props.history.push("/")
     }).catch((error) => {
       console.error("Error removing document: ", error);
+      ///${mydb1.key}
+
     });
   }
 
@@ -58,7 +64,7 @@ export default class SignUp extends Component {
                         <h2>Remove Users</h2>
                         <input className="input type" type="text"
                           placeholder="User Name"/>
-                          <button id="submit">Remove</button>
+                          <button id="submit" class="btn btn-danger">Remove</button>
                         
                     </form>
               </div>
@@ -67,16 +73,14 @@ export default class SignUp extends Component {
                       <thead>
                           <tr>
                           <th ><font color='white'>User Name</font></th>
-                          <th>Description</th>
-                          
                           </tr>
                       </thead>
                       <tbody>
                       {this.state.mydb1.map(mydb1 =>
                               <tr>
-                                  <td><Link to={'/show/${mydb1.key}'}><font color='white'>{mydb1.username}</font></Link></td>
-                                  <td>{mydb1.description}</td>
-                                  <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Remove</button>
+                                  <td><Link to={'/show'}><font color='white'>{mydb1.username}</font></Link></td>
+                                  
+                                  <button onClick={this.delete.bind(this, mydb1.key)} class="btn btn-danger">Remove</button>
                               </tr>
                       )}
                       </tbody>
