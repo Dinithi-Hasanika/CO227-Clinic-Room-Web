@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../Admin.css";
+import "./Admin.css";
 import img1 from "../images/online_books.png";
 import fire from "../config/fire";
 
