@@ -7,50 +7,7 @@ import { Link } from 'react-router-dom'; //new
 
 
 export default class Admin extends Component {
-    constructor(props) {
-        super(props);
-        this.ref = firebase.firestore().collection('user');
-        this.unsubscribe = null;
-        this.state = {
-          user: []
-        };
-      }
-    
-      onCollectionUpdate = (querySnapshot) => {
-        const user = [];
-        querySnapshot.forEach((doc) => {
-          const { title, description, author } = doc.data();
-          user.push({
-            key: doc.id,
-            doc, // DocumentSnapshot
-            title,
-            description,
-            author,
-          });
-        });
-        this.setState({
-          user
-       });
-      }
-    
-      componentDidMount() {
-        this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate);
-      }
-
-      
-
-      delete(id){
-        firebase.firestore().collection('user').doc(id).delete().then(() => {
-          console.log("Document successfully deleted!");
-          this.props.history.push("/")
-        }).catch((error) => {
-          console.error("Error removing document: ", error);
-        });
-      }
-
-   
-
-   render () {
+  render () {
       return ( 
         <div id='container'>
                 
