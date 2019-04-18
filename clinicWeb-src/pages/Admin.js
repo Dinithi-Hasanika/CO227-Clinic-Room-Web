@@ -36,7 +36,7 @@ export default class Admin extends Component {
               </label>
             </div>
             <div className="row-3">
-              <a href="user">User Management</a>
+              <a href="user-management">User Management</a>
               <br />
               <a href="addremovenotes">Add/Remove Notes</a>
               <br />
