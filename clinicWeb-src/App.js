@@ -16,6 +16,12 @@ class App extends Component {
           <Route exact={true} path="/logs" render={() => <Logs />} />
 
           <Route exact={true} path="/user" render={() => <MemberPage />} />
+            
+            <Route
+            exact={true}
+            path="/user-management"
+            render={() => <UserManagement />}
+          />
         </div>
       </BrowserRouter>
     );
