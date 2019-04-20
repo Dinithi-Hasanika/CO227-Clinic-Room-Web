@@ -1,0 +1,226 @@
+/* Profile container */
+.profile {
+  padding: 10px 30px 10px 30px;
+  float: right;
+  margin-top: 0px;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  background: #fff;
+  min-height: 600px;
+  min-width: 300px;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+
+.profile-usermenu {
+  margin-top: 500px;
+  padding: 40px 40px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+
+.li-items {
+  margin-top: 50px;
+  border: none;
+}
+
+a:visited {
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+
+.li-text {
+  font-size: 20px;
+}
+
+.search-box-member {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 150px;
+  transform: translate(-50%, -50%);
+
+  height: 50px;
+  padding: 10px;
+}
+
+.search-btn-member {
+  color: gray;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.search-txt-member {
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px 30px;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 200px;
+}
+
+.inside_member {
+  justify-content: center;
+  flex-direction: column;
+}
+.list-group {
+  font-size: 25px;
+}
+
+.search-txt-whole {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px 30px;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 600px;
+}
+
+.search-box-whole {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 500px;
+  transform: translate(-50%, -50%);
+  background: white;
+  height: 50px;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.your-book {
+  color: white;
+}
+
+.btn-group button {
+  background-color: white; /* Green background */
+  border: 1px solid lightgray; /* Green border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  width: 600px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: lightseagreen;
+}
+
+.list-top {
+  margin-top: 50px;
+}
