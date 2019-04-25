@@ -1,0 +1,30 @@
+.add-list {
+  margin-top: 50px;
+}
+
+.bought-list button {
+  background-color: green;
+  border: 1px solid lightgray;
+  color: black;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+  width: 600px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bought-list:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.bought-list button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+/* .bought-list button:hover {
+  background-color: lightseagreen;
+} */
