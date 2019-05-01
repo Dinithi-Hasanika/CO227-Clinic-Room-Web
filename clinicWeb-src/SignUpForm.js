@@ -2,9 +2,19 @@ import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
 
+import Select from "react-select";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import fire from "./config/fire";
+
+import { connect } from "react-redux";
+
+import { signUpForm } from "./store/actions/UserActions";
+
+import StripeCheckout from "react-stripe-checkout";
+
+import Dialog from "./Dialog";
 
 class SignUpForm extends Component {
   constructor() {
@@ -19,12 +29,20 @@ class SignUpForm extends Component {
 
       hasAgreed: false,
 
-      memtype: 0
+      memtype: 0,
+
+      isPay: false,
+
+      isPassword: false,
+
+      isOpen: false
     };
 
     this.handleChange = this.handleChange.bind(this);
 
     this.handleSubmit = this.handleSubmit.bind(this);
+
+    this.handleSelect = this.handleSelect.bind(this);
   }
   membershipType = [
     { label: "Member Type-1", value: 1, name: "memtype" },
@@ -51,16 +69,40 @@ class SignUpForm extends Component {
 
     //console.log("The form was submitted with the following data:");
 
-    // console.log(this.state);
+    console.log(this.state.isPay);
+    if (this.state.isPay) {
+      fire
+        .auth()
+        .createUserWithEmailAndPassword(this.state.email, this.state.password)
+        .then(u => {})
+        .catch(error => {
+          console.log(error);
+          this.setState({ isPassword: true });
+        });
 
-    fire
-      .auth()
-      .createUserWithEmailAndPassword(this.state.email, this.state.password)
-      .then(u => {})
-      .catch(error => {
-        console.log(error);
-      });
+      this.props.signUpForm(this.state);
+    } else {
+      this.setState({ isOpen: true });
+    }
   }
+  handleSelect(e) {
+    this.setState({
+      [e.name]: e.value
+    });
+  }
+
+  onToken = token => {
+    fetch("/save-stripe-token", {
+      method: "POST",
+      body: JSON.stringify(token)
+    }).then(response => {
+      // response.json().then(data => {
+      // alert(`We are in business, ${data.email}`);
+      // });
+      console.log(token);
+      this.setState({ isPay: true });
+    });
+  };
 
   render() {
     return (
@@ -113,6 +155,14 @@ class SignUpForm extends Component {
               onChange={this.handleChange}
             />
           </div>
+          <div className="select_field">
+            <Select
+              options={this.membershipType}
+              placeholder="Select MemberShip Type"
+              name="memtype"
+              onChange={this.handleSelect}
+            />
+          </div>
 
           <div className="FormField">
             <label className="FormField__CheckboxLabel">
@@ -135,11 +185,36 @@ class SignUpForm extends Component {
             <Link to="/sign-in" className="FormField__Link">
               I'm already member
             </Link>
+            <p />
+            <StripeCheckout
+              token={this.onToken}
+              stripeKey="pk_test_OMqa8U8jMUHpkWcEpRfRbUEE00z0CFVOPx"
+              amount={1000}
+            />
           </div>
         </form>
+        <Dialog
+          isOpen={this.state.isPassword}
+          onClose={e => this.setState({ isPassword: false })}
+        >
+          Password Should Be Strong!!!
+        </Dialog>
+        <Dialog
+          isOpen={this.state.isOpen}
+          onClose={e => this.setState({ isOpen: false })}
+        >
+          Please Pay $10 Before Sign Up!!!
+        </Dialog>
       </div>
     );
   }
 }
-
-export default SignUpForm;
+const mapDispatchToProps = dispatch => {
+  return {
+    signUpForm: userDatas => dispatch(signUpForm(userDatas))
+  };
+};
+export default connect(
+  null,
+  mapDispatchToProps
+)(SignUpForm);
